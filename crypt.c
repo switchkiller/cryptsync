@@ -76,19 +76,20 @@ int main()
 			{
 				min=(int) str[0][x];
 				pos=x;
-				printf("%d\t%c\n",pos,str[0][x]);
+				printf("%d\t%d\t%c\n",min,pos,str[0][x]);
 			}
 		}
 		for (Z=0;Z<7;Z++)
 		{	arr[0]=str[Z][pos];
 			strcat(key,arr);
-			printf("%c\n",key);
+			printf("%s\n",key);
 		}
 
-
-		str[0][pos]=NULL;
-		
+		min=125;
+		str[0][pos]=255;
+		pos=0;
 	}
+
 	printf("%s",key);
 			 
 				
