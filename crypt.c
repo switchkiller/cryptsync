@@ -63,6 +63,8 @@ int main()
 		}  
 		printf("\n");
 	}
+       // printf("**%c**",str[6][0]);
+	arr[0]=NULL;
 	printf("\n");
 	char key[26];
 	key[0]=NULL;
@@ -72,6 +74,7 @@ int main()
 	{
 		for ( x=0; x<4;x++)
 		{
+
 			if (min>=(int) str[0][x])
 			{
 				min=(int) str[0][x];
@@ -80,18 +83,19 @@ int main()
 			}
 		}
 		for (Z=0;Z<7;Z++)
-		{	arr[0]=str[Z][pos];
+		{	
+			arr[0]=str[Z][pos];
+			printf("??%c?? \t",str[6][1]);
 			strcat(key,arr);
 			printf("%s\n",key);
 		}
-
-		min=125;
+	//	printf("**%c**",str[6][0]);
+		min=200;
 		str[0][pos]=255;
-		pos=0;
 	}
 
 	printf("%s",key);
-			 
+	
 				
 	getchar();
 	return 0;
