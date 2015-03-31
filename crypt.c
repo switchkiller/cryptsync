@@ -64,13 +64,12 @@ int main()
 		printf("\n");
 	}
        // printf("**%c**",str[6][0]);
-	arr[0]=NULL;
-	printf("\n");
+	char temp[1]; 
 	char key[26];
 	key[0]=NULL;
 	int min=(int) str[0][0];
-	int pos;
-	for ( j=0;j<4;j++)
+        int pos;
+        for ( j=0;j<4;j++)
 	{
 		for ( x=0; x<4;x++)
 		{
@@ -80,23 +79,18 @@ int main()
 				min=(int) str[0][x];
 				pos=x;
 				printf("%d\t%d\t%c\n",min,pos,str[0][x]);
-			}
+			}        
 		}
-		for (Z=0;Z<7;Z++)
+                for (Z=0;Z<7;Z++)
 		{	
-			arr[0]=str[Z][pos];
-			printf("??%c?? \t",str[6][1]);
-			strcat(key,arr);
+			temp[0]=str[Z][pos];
+			strcat(key,temp);
 			printf("%s\n",key);
 		}
-	//	printf("**%c**",str[6][0]);
 		min=200;
 		str[0][pos]=255;
 	}
-
 	printf("%s",key);
-	
-				
 	getchar();
 	return 0;
 }
