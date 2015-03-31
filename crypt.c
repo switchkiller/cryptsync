@@ -91,6 +91,16 @@ int main()
 		str[0][pos]=255;
 	}
 	printf("%s",key);
+	char secmsg[20];
+	char encrmsg[20];
+	printf("Enter secret message : ");
+	scanf("%s",secmsg);
+	for (Z=0;Z<20;Z++)
+	{
+		i=secmsg[Z];
+		encrmsg[Z]=key[i-97];		
+	}
+	printf("%s",encrmsg);
 	getchar();
 	return 0;
 }
